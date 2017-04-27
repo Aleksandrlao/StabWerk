@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title>StabWerk</title>
+	<link href="js/jquery.fancybox-1.3.7.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<header class="m_box header">
+	<div class="m_inb">
+		<a href="#" class="header-logo"></a>
+		<div class="header-desc">На строительном рынке с 1990 года</div>
+		<div class="header-contact">
+			<a href="tel:+73422345678" class="header-phone">+7 (342) <span>234-56-78</span></a>
+			<div class="header-callme action" data-event="callme" data-name="Заказать звонок: Шапка">Заказать звонок</div>
+		</div>
+	</div>
+	<div class="m_inb header-nav">
+		<ul>
+			<li><a href="#" class="goto" data-scroll="betonpol">Устройство бетонных полов</a></li>
+			<li><a href="#" class="goto" data-scroll="polimer">Полимерные покрытия полов</a></li>
+			<li><a href="#" class="goto" data-scroll="membran">Мембранные кровли</a></li>
+		</ul>
+	</div>
+</header><!-- .header-->
+
+
+<div class="m_box c_top">
+	<div class="m_inb">
+		<div class="c_top-head">Устройство промышленных полов и мембранных кровель</div>
+		<div class="c_top-nav">
+			<div class="c_top-item"><a href="#" class="c_top-item__link goto" data-scroll="betonpol">
+				<span class="c_top-item__thumb"><img src="i/bg-top-betonpol.jpg" alt="Устройство бетонных полов"></span>
+				<span class="c_top-item__title">Устройство бетонных полов</span>
+			</a></div>
+			<div class="c_top-item"><a href="#" class="c_top-item__link goto" data-scroll="polimer">
+				<span class="c_top-item__thumb"><img src="i/bg-top-polimer.jpg" alt="Полимерные покрытия полов"></span>
+				<span class="c_top-item__title">Полимерные покрытия полов</span>
+			</a></div>
+			<div class="c_top-item"><a href="#" class="c_top-item__link goto" data-scroll="membran">
+				<span class="c_top-item__thumb"><img src="i/bg-top-membran.jpg" alt="Мембранные кровли"></span>
+				<span class="c_top-item__title">Мембранные кровли</span>
+			</a></div>
+		</div>
+		<div class="c_top-box">
+			<div class="c_top-video action" data-event="video">
+				<img src="i/bg-video.jpg" alt="Video">
+			</div>
+			<div class="c_top-require">
+				<div class="c_top-require__head">Оставьте заявку</div>
+				<div class="c_top-require__desc">Наш менеджер свяжется с вами в течение 10 минут</div>
+				<div class="c_top-require__form">
+					<form action="send.php" method='post' class="с_form">
+						<div class='form-label'>
+							<input type="text" placeholder='Ваше имя' name='name' class="form-input" required="required">
+						</div>
+						<div class='form-label'>
+							<input type="tel" placeholder='Ваш телефон' name='tel' class="form-input" required="required">
+						</div>
+						<div class="c_top-require__select">
+							<select name="service">
+								<option value="1">Услуга 1</option>
+								<option value="2">Услуга 2</option>
+								<option value="3">Услуга 3</option>
+							</select>
+						</div>
+						<input type="hidden" name='input_type' value="Заявка: Шапка">
+						<input type="submit" value="Отправить заявку">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- .c_top -->
+
+
+<div class="m_box c_proizv">
+	<div class="m_inb">
+		<div class="c_head">О производстве</div>
+		<div class="c_proizv-list">
+			<div class="c_proizv-item">
+				<div class="c_proizv-head">27+</div>
+				<div class="c_proizv-info">27 лет на строительном <span>рынке России</span></div>
+			</div>
+			<div class="c_proizv-item">
+				<div class="c_proizv-head">1,5м</div>
+				<div class="c_proizv-info">Более 1 500 000 метров <span>полов и кровли</span></div>
+			</div>
+			<div class="c_proizv-item">
+				<div class="c_proizv-head"><img src="i/bg-proizv-company.png" alt="Доверие компаний"></div>
+				<div class="c_proizv-info">Доверие таких компаний, <span>как: IKEA, МЕТРО, Лукойл,</span> Газпром, РусГидро и др.</div>
+			</div>
+			<div class="c_proizv-item">
+				<div class="c_proizv-head"><img src="i/bg-proizv-standart.png" alt="Международные стандарты качества"></div>
+				<div class="c_proizv-info">Международные <span>стандарты качества</span></div>
+			</div>
+		</div>
+	</div>
+</div><!-- .c_proizv -->
+
+
+<div class="m_box c_preim">
+	<div class="m_inb">
+		<div class="c_preim-list">
+			<div class="c_preim-item">Одна из немногих организаций в России, владеющая всеми современными технологиями монтажа бетонных полов с различными финишными покрытиями, а так же осуществляющая работы связанные с монтажом мембранных кровель и гидроизоляции.</div>
+			<div class="c_preim-item">Мы используем только качественные, надежные строительные материалы и технологии, требующие высокой квалификации специалистов и рабочих.</div>
+			<div class="c_preim-item">Мы используем только высокопроизводительное, профессиональное оборудование, позволяющее быстро и эффективно  выполнять все необходимые технологические операции.</div>
+			<div class="c_preim-item">Мы предоставляем реальные гарантии на выполненную работу.</div>
+			<div class="c_preim-item">Нашими Заказчиками являются многие зарубежные компании, что является признанием профессиональной квалификации на международном уровне.</div>
+			<div class="c_preim-item">Наши специалисты регулярно проходят стажировки у ведущих мировых производителей, в том числе за рубежом.</div>
+		</div>
+	</div>
+</div><!-- .content -->
+
+
+<div class="m_box c_botline c_clients">
+	<div class="m_inb">
+		<div class="c_head">нам доверяют</div>
+		<div class="c_kvalif-list c_clients-slider">
+			<div class="c_kvalif-item">
+				<a href="i/bg-sert.jpg" rel="fancybox"><img src="i/bg-sert.jpg" alt="sert"></a>
+			</div>
+			<div class="c_kvalif-item">
+				<a href="i/bg-sert.jpg" rel="fancybox"><img src="i/bg-sert.jpg" alt="sert"></a>
+			</div>
+			<div class="c_kvalif-item">
+				<a href="i/bg-sert.jpg" rel="fancybox"><img src="i/bg-sert.jpg" alt="sert"></a>
+			</div>
+			<div class="c_kvalif-item">
+				<a href="i/bg-sert.jpg" rel="fancybox"><img src="i/bg-sert.jpg" alt="sert"></a>
+			</div>
+			<div class="c_kvalif-item">
+				<a href="i/bg-sert.jpg" rel="fancybox"><img src="i/bg-sert.jpg" alt="sert"></a>
+			</div>
+			<div class="c_kvalif-item">
+				<a href="i/bg-sert.jpg" rel="fancybox"><img src="i/bg-sert.jpg" alt="sert"></a>
+			</div>
+		</div>
+		<div class="c_clients-thumbs">
+			<div class="c_clients-logo"><img src="i/gazprom.png" alt="gazprom"></div>
+			<div class="c_clients-logo"><img src="i/gazprom.png" alt="gazprom"></div>
+			<div class="c_clients-logo"><img src="i/gazprom.png" alt="gazprom"></div>
+			<div class="c_clients-logo"><img src="i/gazprom.png" alt="gazprom"></div>
+			<div class="c_clients-logo"><img src="i/gazprom.png" alt="gazprom"></div>
+			<div class="c_clients-logo"><img src="i/gazprom.png" alt="gazprom"></div>
+			<div class="c_clients-logo"><img src="i/gazprom.png" alt="gazprom"></div>
+			<div class="c_clients-logo"><img src="i/gazprom.png" alt="gazprom"></div>
+		</div>
+		<div class="c_clients-btn c_btn action" data-events="require" data-name="Заявка: Клиенты">Отправить заявку</div>
+	</div>
+</div><!-- .content -->
+
+
+<div class="m_box c_botline c_kvalif">
+	<div class="m_inb">
+		<div class="c_head">Наша квалификация</div>
+		<div class="c_kvalif-desc">лицензии и сертификаты</div>
+		<div class="c_kvalif-list c_kvalif-slider">
+			<div class="c_kvalif-item">
+				<a href="i/bg-sert.jpg" rel="fancybox"><img src="i/bg-sert.jpg" alt="sert"></a>
+			</div>
+			<div class="c_kvalif-item">
+				<a href="i/bg-sert.jpg" rel="fancybox"><img src="i/bg-sert.jpg" alt="sert"></a>
+			</div>
+			<div class="c_kvalif-item">
+				<a href="i/bg-sert.jpg" rel="fancybox"><img src="i/bg-sert.jpg" alt="sert"></a>
+			</div>
+			<div class="c_kvalif-item">
+				<a href="i/bg-sert.jpg" rel="fancybox"><img src="i/bg-sert.jpg" alt="sert"></a>
+			</div>
+			<div class="c_kvalif-item">
+				<a href="i/bg-sert.jpg" rel="fancybox"><img src="i/bg-sert.jpg" alt="sert"></a>
+			</div>
+			<div class="c_kvalif-item">
+				<a href="i/bg-sert.jpg" rel="fancybox"><img src="i/bg-sert.jpg" alt="sert"></a>
+			</div>
+		</div>
+	</div>
+</div><!-- .content -->
+
+
+<div class="m_box c_botline c_serv">
+	<div class="m_inb">
+		<div class="c_head">наши услуги</div>
+		<div class="c_serv-box1 c_serv-box" id="betonpol">
+			<div class="c_serv-photo">
+				<div class="c_serv-photo__slider">
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+				</div>
+				<div class="c_serv-photo__min">
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+
+				</div>
+			</div>
+			<div class="c_serv-info">
+				<div class="c_serv-info__name">Устройство бетонных полов</div>
+				<div class="c_serv-info__txt c_txt">
+					<p>Одним из самых экономичных с точки зрения материальных вложений, промышленный бетонный пол сочетает в себе способность выдерживать высокие интенсивные механические воздействия и высокие нагрузки, устойчивость к перепадам температур, влаги, электрического тока. Так же бетонный пол имеет эстетичный внешний вид, не пылит, не скользит, экологически безопасен.</p>
+					<p>Бетонные полы которые уложили мастера нашей компании, помогут Вам забыть на десятки лет о необходимости их ремонта или замене.</p>
+				</div>
+				<div class="c_serv-info__btn c_btn action" data-event="require" data-name="Заявка: Устройство бетонных полов">Отправить заявку</div>
+			</div>
+		</div>
+
+		<div class="c_serv-box2 c_serv-box" id="polimer">
+			<div class="c_serv-photo">
+				<div class="c_serv-photo__slider">
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+				</div>
+				<div class="c_serv-photo__min">
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+
+				</div>
+			</div>
+			<div class="c_serv-info">
+				<div class="c_serv-info__name">Полимерные покрытия</div>
+				<div class="c_serv-info__txt c_txt">
+					<p>Полимерные полы – это полимерные покрытия для поверхностей из бетона, металла, дерева и других строительных материалов.</p>
+					<p>Полимерный пол является современным финишным покрытием, которое защищает основание от истирания и химических воздействий. Широкий ассортимент позволяет подобрать оптимальное вариант покрытия для конкретной задачи.</p>
+					<p>- Высокий уровень прочности и эластичности<br>
+					- Устойчивость к механическим и любым химическим воздействиям.<br>
+					- Срок службы минимум 15 лет<br>
+					- Разнообразная цветовая гамма<br>
+					- Высокий уровень безопасности и гигиены<br>
+					- Пожароустойчивость</p>
+				</div>
+				<div class="c_serv-info__btn c_btn action" data-event="require" data-name="Заявка: Полимерные покрытия">Отправить заявку</div>
+			</div>
+		</div>
+
+		<div class="c_serv-box3 c_serv-box" id="membran">
+			<div class="c_serv-photo">
+				<div class="c_serv-photo__slider">
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+					<div class="c_serv-photo__item"><a href="i/bg-service.jpg" rel="fancybox">
+						<img src="i/bg-service.jpg" alt="Service">
+					</a></div>
+				</div>
+				<div class="c_serv-photo__min">
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+					<div class="c_serv-photo__ist">
+						<img src="i/bg-service.jpg" alt="Service">
+					</div>
+
+				</div>
+			</div>
+			<div class="c_serv-info">
+				<div class="c_serv-info__name">Мембранные кровли</div>
+				<div class="c_serv-info__txt c_txt">
+					<p>Мембранная кровля позволяет выполнить надежное, практически бесщовное, прочное, не восприимчивое к перепадам температур, негорючие, и доступное по цене покрытие со сроком службы до 50 лет.</p>
+					<p>Еще несколько качеств мембранной кровли: <br>
+					- Высокая скорость монтажа при любой сложности <br>
+					- Возможность локального ремонта <br>
+					- Можно уложить поверх старого покрытия</p>
+				</div>
+				<div class="c_serv-info__btn c_btn action" data-event="require" data-name="Заявка: Мембранные кровли">Отправить заявку</div>
+			</div>
+		</div>
+
+
+	</div>
+</div><!-- .content -->
+
+
+<div class="m_box c_about">
+	<div class="m_inb">
+		<div class="c_head">О компании</div>
+		<div class="c_about-thumb"><img src="i/bg-about.jpg" alt="О компании"></div>
+		<div class="c_about-txt c_txt">
+			<p>Компания СТАБВЕРК первая на строительном рынке Пермского края выполнила работы по устройству промышленных бетонных полов с топпингом и уложила первые метры мембранных кровель. Компания выполняет работы на территории Российской Федерации с 1989 года. Филиалы компании СТАБВЕРК расположены в крупнейших городах России.</p>
+			<p>Накопленный опыт, стандарты качества, собственные строительные бригады и постоянный поиск новых, эффективных технологий и материалов позволяют оказывать услуги на высочайшем качественном уровне при строительстве объектов различной сложности промышленного, складского и общественного назначения, а также предлагать нашим клиентам самые оптимальные решения для реализации конкретных задач.</p>
+		</div>
+	</div>
+</div><!-- .content -->
+
+
+<div class="m_box c_contact">
+	<div class="m_inb">
+		<div class="c_head">Контактная информация</div>
+		<div class="c_contact-list">
+			<div class="c_contact-item">
+				<div class="c_contact-item__thumb">
+					<img src="i/bg-contact-item.jpg" alt="item">
+				</div>
+				<div class="c_contact-item__info">
+					<div class="c_contact-item__name">Дербенев Денис Витальевич</div>
+					<div class="c_contact-item__pos">Менеджер</div>
+					<a href="tel:+73422343235" class="c_contact-item__tel">+7 (342) 234-32-35</a>
+				</div>
+			</div>
+			<div class="c_contact-item">
+				<div class="c_contact-item__thumb">
+					<img src="i/bg-contact-item.jpg" alt="item">
+				</div>
+				<div class="c_contact-item__info">
+					<div class="c_contact-item__name">Дербенев Денис Витальевич</div>
+					<div class="c_contact-item__pos">Менеджер</div>
+					<a href="tel:+73422343235" class="c_contact-item__tel">+7 (342) 234-32-35</a>
+				</div>
+			</div>
+			<div class="c_contact-item">
+				<div class="c_contact-item__thumb">
+					<img src="i/bg-contact-item.jpg" alt="item">
+				</div>
+				<div class="c_contact-item__info">
+					<div class="c_contact-item__name">Дербенев Денис Витальевич</div>
+					<div class="c_contact-item__pos">Менеджер</div>
+					<a href="tel:+73422343235" class="c_contact-item__tel">+7 (342) 234-32-35</a>
+				</div>
+			</div>
+			<div class="c_contact-item">
+				<div class="c_contact-item__thumb">
+					<img src="i/bg-contact-item.jpg" alt="item">
+				</div>
+				<div class="c_contact-item__info">
+					<div class="c_contact-item__name">Дербенев Денис Витальевич</div>
+					<div class="c_contact-item__pos">Менеджер</div>
+					<a href="tel:+73422343235" class="c_contact-item__tel">+7 (342) 234-32-35</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- .content -->
+
+
+<div class="m_box c_map">
+	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6924308f134554b9057e30d3208faaa2cfed115be8da894ecf2d4197352beffb&amp;width=100%25&amp;height=300&amp;lang=ru_UA&amp;scroll=false"></script>
+</div><!-- .content -->
+
+<footer class="m_box footer">
+	<div class="m_inb">
+		<div class="f_info">
+			<div class="f_logo"></div>
+			<div class="f_inn">2017 ООО "СТАБВЕРК". Все права защищены <br>ИНН: 123456789. КПП: 123456789</div>
+		</div>
+		<div class="f_contact">
+			<a href="tel:+73422345678" class="header-phone">+7 (342) 234-56-78</a>
+			<div class="header-callme action" data-event="callme" data-name="Заказать звонок: Футер">Заказать звонок</div>
+			<div class="f_made"><a href="#">Создание сайта</a> - Студия Бобрик</div>
+		</div>
+	</div>
+</footer><!-- .footer -->
+
+
+<div class="overlay"></div>
+<div class="popup-callme popup">
+	<div class="popup-close">x</div>
+	<div class="popup-head">
+		<div class="popup-title">Заполните форму,</div>
+		<div class="popup-desc">и мы свяжемся с Вами в ближайшее время</div>
+	</div>
+	<div class="popup-body">
+		<form action="send.php" method='post' class="с_form">
+		<div class='form-label'>
+			<input type="text" placeholder='Ваше имя' name='name' class="form-input" required="required">
+		</div>
+		<div class='form-label'>
+			<input type="tel" placeholder='Ваш телефон' name='tel' class="form-input" required="required">
+		</div>
+			<input type="hidden" name='input_type' value="Заказать звонок">
+			<input type="submit" class="form-submit" value='Заказать звонок'>
+		</form>
+	</div>
+</div>
+
+<div class="popup-require popup">
+	<div class="popup-close">x</div>
+	<div class="popup-head">
+		<div class="popup-title">Заполните форму,</div>
+		<div class="popup-desc">и мы свяжемся с Вами в ближайшее время</div>
+	</div>
+	<div class="popup-body">
+		<form action="send.php" method='post' class="с_form">
+			<div class='form-label'>
+				<input type="text" placeholder='Ваше имя' name='name' class="form-input" required="required">
+			</div>
+			<div class='form-label'>
+				<input type="tel" placeholder='Ваш телефон' name='tel' class="form-input" required="required">
+			</div>
+			<input type="hidden" name='input_type' value="Отправить заявку">
+			<input type="submit" class="form-submit" value='Отправить заявку'>
+		</form>
+	</div>
+</div>
+
+<div class="popup-thy popup">
+	<div class="popup-close">x</div>
+	<div class="popup-head">
+		<div class="popup-title">Ваша заявка успешно отправлена!</div>
+	</div>
+</div>
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.forms.js"></script>
+<script src="js/jquery.fancybox-1.3.7.min.js"></script>
+<script src="js/jquery.main.js"></script>
+
+</body>
+</html>
